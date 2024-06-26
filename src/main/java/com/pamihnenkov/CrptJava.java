@@ -40,7 +40,7 @@ public class CrptJava {
                 synchronized (counter) {
                     currentValue = counter.getAndShowQtyLeft();
 
-                    if (currentValue < 0) {  // Полагаю, что это условие всегда будет ложным.
+                    if (currentValue < 0) {
                         semaphore.setOff();
                         continue;
                     }
